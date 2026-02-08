@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "src/index.ts",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "src/index.ts",
+            "methods": [
+                "GET",
+                "POST",
+                "OPTIONS",
+                "PUT",
+                "DELETE"
+            ]
+        }
+    ],
+    "env": {
+        "GOOGLE_GENAI_API_KEY": "@google_genai_api_key"
+    }
+}

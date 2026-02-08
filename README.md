@@ -39,7 +39,7 @@ A professional Genkit-powered backend service for analyzing agricultural waste i
 3.  **Environment Variables**:
     Create a `.env` file in the root directory:
     ```env
-    GOOGLE_GENAI_API_KEY=your_google_ai_api_key
+    GEMINI_API_KEY=your_google_ai_api_key
     PORT=3400
     ```
 
@@ -106,7 +106,7 @@ This service is optimized for deployment on **Vercel** as a serverless function.
 1.  **Push to GitHub**: Push your code to a GitHub repository.
 2.  **Import to Vercel**: Connect your repository to Vercel.
 3.  **Environment Variables**: In the Vercel dashboard, add the following environment variable:
-    - `GOOGLE_GENAI_API_KEY`: Your Google AI Studio API Key.
+    - `GEMINI_API_KEY`: Your Google AI Studio API Key.
 4.  **Deploy**: Vercel will automatically detect the `vercel.json` and deploy your backend.
 
 ## API Specification
@@ -150,7 +150,7 @@ Returns `{ "status": "ok", "service": "..." }`.
 ## Local Development
 
 1.  **Install dependencies**: `npm install`
-2.  **Set up .env**: Add your `GOOGLE_GENAI_API_KEY`.
+2.  **Set up .env**: Add your `GEMINI_API_KEY`.
 3.  **Run Development Server**:
     ```bash
     npm run start:watch

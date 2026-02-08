@@ -8,7 +8,7 @@ import express from 'express';
 
 const ai = genkit({
     plugins: [
-        googleAI({ apiKey: process.env.GOOGLE_GENAI_API_KEY }),
+        googleAI({ apiKey: process.env.GEMINI_API_KEY }),
     ],
     model: gemini15Flash,
 });
